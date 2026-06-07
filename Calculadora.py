@@ -4,6 +4,8 @@ from fractions import Fraction
 os.system("cls")
 
 while True:
+    
+    print("============ MENU ============")
     print("0 - Sair")
     print("1 - Soma")
     print("2 - Subtracao")
@@ -13,6 +15,9 @@ while True:
     print("6 - Raiz Quadrada")
     print("7 - Operacoes com Pi")
     print("8 - Seno, Cosseno e Tangente")
+    print("9 - Logaritmo")
+    print("10 - ")
+    print("=" * 30)
     opc = input("Escolha uma operacao: ")
 
     match opc:
@@ -150,18 +155,23 @@ while True:
                     angulo_graus = float(input("Valor do Angulo: "))
                     angulo_radianos = math.radians(angulo_graus)
                     sen = math.sin(angulo_radianos)
-                    print(f"Seno de {angulo_graus}: {sen}")
+                    print(f"Seno de {angulo_graus}º: {sen}")
                 case "2":
                     angulo_graus = float(input("Valor do Angulo: "))
                     angulo_radianos = math.radians(angulo_graus)
                     cos = math.cos(angulo_radianos)
-                    print(f"Cosseno de {angulo_graus}: {cos}")
+                    print(f"Cosseno de {angulo_graus}º: {cos}")
                 case "3":
                     angulo_graus = float(input("Valor do Angulo: "))
                     angulo_radianos = math.radians(angulo_graus)
                     tan = math.tan(angulo_radianos)
-                    print(f"Tangente de {angulo_graus}: {tan}")
+                    print(f"Tangente de {angulo_graus}º: {tan}")
             continue
+        case "9":
+            n1 = float(input("Digite um numero: "))
+            log = math.log(n1)
+            print(f"Logaritmo de {n1}: {log}")
+            
         case _:
             print("Erro! Escolha uma opcao valida!")
-            continue  
+            continue
