@@ -1,5 +1,6 @@
 import os
 import math
+import time
 from fractions import Fraction
 os.system("cls")
 

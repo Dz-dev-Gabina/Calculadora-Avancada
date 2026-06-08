@@ -1,0 +1,4 @@
+py -m PyInstaller --onefile Calculadora.py
+
+CAVEIRAS GULOSAS E MOLESTADAS
+SOM DE CHICOTADAS
