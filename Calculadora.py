@@ -16,7 +16,7 @@ while True:
     print("7 - Operacoes com Pi")
     print("8 - Seno, Cosseno e Tangente")
     print("9 - Logaritmo")
-    print("10 - ")
+    print("10 - Fatorial")
     print("=" * 30)
     opc = input("Escolha uma operacao: ")
 
@@ -169,9 +169,13 @@ while True:
             continue
         case "9":
             n1 = float(input("Digite um numero: "))
-            log = math.log(n1)
-            print(f"Logaritmo de {n1}: {log}")
-            
+            n2 = float(input("Base do logaritmo: "))
+            log = math.log(n1, n2)
+            print(f"Logaritmo de {n1} na base {n2}: {log}")
+        case "10":
+            n1 = int(input("Digite um numero: "))
+            fat = math.factorial(n1)
+            print(f"Fatorial de {n1}: {fat}")
         case _:
             print("Erro! Escolha uma opcao valida!")
             continue
